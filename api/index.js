@@ -89,6 +89,7 @@ app.post('/post', uploadMiddleware.single('file'), async (req,res) => {
 
 });
 
+//edit post
 app.put('/post',uploadMiddleware.single('file'), async (req,res) => {
   let newPath = null;
   if (req.file) {
